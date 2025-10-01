@@ -16,26 +16,45 @@ jobs:
         ports:
           - 4566
 
+      redis:
+        image: redis
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 1s
+          --health-timeout 2s
+          --health-retries 10
+
     steps:
+      ###
+      # Checkout using GitHub's checkout action
       - uses: actions/checkout@v2
 
+      ###
+      # Setup Ruby - this needs to match the version in the Gemfile
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@a4effe49ee8ee5b8b5091268c473a4628afb5651
         with:
           ruby-version: "3.2.1"
           bundler-cache: true
 
+      ###
+      # Install bundler dependencies
       - name: Install dependencies
         env:
-          JIKI_ENV: test
+          JIKI_ENV: production
           JIKI_CI: true
           AWS_PORT: ${{ job.services.aws.ports['4566'] }}
         run: |
           bundle exec setup_jiki_config
+          bundle exec setup_jiki_local_aws
 
+      ###
+      # Run the tests
       - name: Run Ruby tests
         env:
-          JIKI_ENV: test
+          JIKI_ENV: production
           JIKI_CI: true
           AWS_PORT: ${{ job.services.aws.ports['4566'] }}
         run: |

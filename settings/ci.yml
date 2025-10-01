@@ -1,0 +1,4 @@
+# Aurora Database
+aurora_endpoint: localhost
+aurora_port: 5432
+aurora_database_name: jiki_test

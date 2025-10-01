@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'jiki-config'
+
+if Jiki.env.production?
+  puts 'Aborted! This script should not be run in production.'
+  exit
+end
+
+puts "Setting up local AWS services..."
+puts "Make sure LocalStack is running on port 3040"
+puts ""
+puts "To start LocalStack:"
+puts "  docker run -dp 3042:8080 -p 3040:4566 -p 3041:4566 localstack/localstack"
+puts ""
+puts "Run 'bin/setup_jiki_config' to populate DynamoDB and Secrets Manager"

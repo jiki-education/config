@@ -1,0 +1,42 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      aws:
+        image: "localstack/localstack"
+        ports:
+          - 4566
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2.1"
+          bundler-cache: true
+
+      - name: Install dependencies
+        env:
+          JIKI_ENV: test
+          JIKI_CI: true
+          AWS_PORT: ${{ job.services.aws.ports['4566'] }}
+        run: |
+          bundle exec setup_jiki_config
+
+      - name: Run Ruby tests
+        env:
+          JIKI_ENV: test
+          JIKI_CI: true
+          AWS_PORT: ${{ job.services.aws.ports['4566'] }}
+        run: |
+          bundle exec rake test

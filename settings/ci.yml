@@ -4,4 +4,4 @@ aurora_port: 5432
 aurora_database_name: jiki_test
 
 # Frontend URL for emails and CORS
-frontend_base_url: http://localhost:3000
+frontend_base_url: http://localhost:3060

@@ -5,6 +5,7 @@ PATH
       aws-sdk-dynamodb (~> 1.0)
       aws-sdk-secretsmanager (~> 1.0)
       mandate
+      ostruct
       zeitwerk
 
 GEM
@@ -48,6 +49,7 @@ GEM
     minitest (5.25.5)
     mocha (2.7.1)
       ruby2_keywords (>= 0.0.5)
+    ostruct (0.6.3)
     parallel (1.27.0)
     parser (3.3.9.0)
       ast (~> 2.4.1)

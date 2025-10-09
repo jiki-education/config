@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'aws-sdk-dynamodb', '~> 1.0'
   spec.add_dependency 'aws-sdk-secretsmanager', '~> 1.0'
   spec.add_dependency 'mandate'
+  spec.add_dependency 'ostruct'
   spec.add_dependency 'zeitwerk'
 
   spec.add_development_dependency 'bundler', '~> 2.1'

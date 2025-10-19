@@ -14,3 +14,6 @@ spi_base_url: http://localhost:3061/spi/
 
 # LLM Proxy URL for AI translation services
 llm_proxy_url: http://localhost:3064/exec
+
+# S3 Buckets
+s3_bucket_video_production: jiki-videos-dev

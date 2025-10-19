@@ -8,3 +8,6 @@ frontend_base_url: http://localhost:3060
 
 # Admin URL for CORS
 admin_base_url: http://localhost:3062
+
+# S3 Buckets
+s3_bucket_video_production: test-bucket

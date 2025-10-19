@@ -43,6 +43,10 @@ Jiki.secrets.ses_smtp_username
 Jiki.secrets.ses_smtp_password
 Jiki.secrets.ses_smtp_address
 Jiki.secrets.ses_smtp_port
+
+# API Keys
+Jiki.secrets.google_api_key      # Google Gemini API key
+Jiki.secrets.elevenlabs_api_key  # ElevenLabs API key
 ```
 
 ## Helper Methods

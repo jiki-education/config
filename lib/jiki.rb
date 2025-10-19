@@ -17,6 +17,15 @@ module Jiki
     Aws::DynamoDB::Client.new(JikiConfig::GenerateAwsSettings.())
   end
 
+  def self.s3_client
+    require 'aws-sdk-s3'
+    Aws::S3::Client.new(
+      JikiConfig::GenerateAwsSettings.().merge(
+        force_path_style: true
+      )
+    )
+  end
+
   def self.ses_client
     require 'aws-sdk-sesv2'
     Aws::SESV2::Client.new(JikiConfig::GenerateAwsSettings.())

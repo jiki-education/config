@@ -50,6 +50,7 @@ Jiki.secrets.ses_smtp_port
 ### AWS Client Helpers
 ```ruby
 Jiki.dynamodb_client  # AWS DynamoDB client (for accessing config table)
+Jiki.s3_client        # AWS S3 client (for object storage operations)
 Jiki.ses_client       # AWS SES client (for email operations)
 ```
 

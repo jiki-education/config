@@ -47,6 +47,7 @@ Jiki.secrets.ses_smtp_port
 # API Keys
 Jiki.secrets.google_api_key      # Google Gemini API key
 Jiki.secrets.elevenlabs_api_key  # ElevenLabs API key
+Jiki.secrets.heygen_api_key      # HeyGen API key
 ```
 
 ## Helper Methods

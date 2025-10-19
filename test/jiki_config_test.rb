@@ -10,6 +10,11 @@ class JikiConfigTest < Minitest::Test
     assert_instance_of Aws::DynamoDB::Client, client
   end
 
+  def test_s3_client
+    s3_client = Jiki.s3_client
+    assert_equal "eu-west-2", s3_client.config.region
+  end
+
   def test_ses_client
     ses_client = Jiki.ses_client
     assert_equal "eu-west-2", ses_client.config.region

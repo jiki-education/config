@@ -26,7 +26,7 @@ module JikiConfig
       return nil if Jiki.env.production?
       return "http://127.0.0.1:#{ENV['AWS_PORT']}" if Jiki.env.test? && ENV['JIKI_CI']
 
-      "http://localhost:3040"
+      "http://localhost:3065"
     end
   end
 end

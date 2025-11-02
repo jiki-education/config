@@ -10,7 +10,7 @@ frontend_base_url: http://localhost:3060
 admin_base_url: http://localhost:3062
 
 # SPI (Service Provider Interface) base URL for callbacks
-spi_base_url: http://local.jiki.io:3061/spi
+spi_base_url: http://local.jiki.io:3060/spi
 
 # S3 Buckets
 s3_bucket_video_production: test-bucket

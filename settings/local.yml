@@ -17,3 +17,8 @@ llm_proxy_url: http://localhost:3064/exec
 
 # S3 Buckets
 s3_bucket_video_production: jiki-videos-dev
+
+# Stripe Configuration
+stripe_publishable_key: pk_test_51SPygTEvAkEDKF4oICBUOrPTFQuMgOwt9gHiP6LKggy7oFRPf56stByJMcM1z9ssTZRIMQSEDdnAXRrDrgqiDg6R00cD0VsQWQ
+stripe_premium_price_id: "price_1SQ0LiEvAkEDKF4omNwi6NQu"
+stripe_max_price_id: "price_1SPyjcEvAkEDKF4oWbwiWVZh"

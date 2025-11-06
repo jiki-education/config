@@ -14,3 +14,8 @@ spi_base_url: http://local.jiki.io:3060/spi
 
 # S3 Buckets
 s3_bucket_video_production: test-bucket
+
+# Stripe Configuration (test mode)
+stripe_publishable_key: pk_test_fake_publishable_key
+stripe_premium_price_id: price_fake_premium
+stripe_max_price_id: price_fake_max

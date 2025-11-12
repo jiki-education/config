@@ -15,6 +15,11 @@ spi_base_url: http://local.jiki.io:3060/spi
 # S3 Buckets
 s3_bucket_video_production: test-bucket
 
+# Cloudflare R2 (test values)
+r2_account_id: "test-account-id"
+r2_bucket_assets: "test-assets"
+assets_cdn_url: "https://test-assets.example.com"
+
 # Stripe Configuration (test mode)
 stripe_publishable_key: pk_test_fake_publishable_key
 stripe_premium_price_id: price_fake_premium

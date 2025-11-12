@@ -35,4 +35,15 @@ module Jiki
     require 'aws-sdk-lambda'
     Aws::Lambda::Client.new(JikiConfig::GenerateAwsSettings.())
   end
+
+  def self.r2_client
+    require 'aws-sdk-s3'
+    Aws::S3::Client.new(
+      access_key_id: secrets.r2_access_key_id,
+      secret_access_key: secrets.r2_secret_access_key,
+      endpoint: "https://#{config.r2_account_id}.r2.cloudflarestorage.com",
+      region: 'auto',
+      force_path_style: true
+    )
+  end
 end

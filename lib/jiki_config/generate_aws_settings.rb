@@ -4,7 +4,7 @@ module JikiConfig
 
     def call
       {
-        region: 'eu-west-2',
+        region: 'eu-west-1',
         endpoint:,
         access_key_id: aws_access_key_id,
         secret_access_key: aws_secret_access_key

@@ -27,3 +27,14 @@ assets_cdn_url: "https://assets.jiki.io"
 stripe_publishable_key: pk_test_51SPygTEvAkEDKF4oICBUOrPTFQuMgOwt9gHiP6LKggy7oFRPf56stByJMcM1z9ssTZRIMQSEDdnAXRrDrgqiDg6R00cD0VsQWQ
 stripe_premium_price_id: "price_1SPyjBEvAkEDKF4o2OAJy7Ir"
 stripe_max_price_id: "price_1SPyjcEvAkEDKF4oWbwiWVZh"
+
+# Email Configuration
+mail_from_email: hello@mail.jiki.io
+marketing_from_email: hello@hello.jiki.io
+notifications_from_email: hello@notifications.jiki.io
+support_email: hello@jiki.io
+
+# SES Configuration Sets
+ses_mail_configuration_set: jiki-mail-local
+ses_marketing_configuration_set: jiki-marketing-local
+ses_notifications_configuration_set: jiki-notifications-local

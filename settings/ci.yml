@@ -35,3 +35,4 @@ support_email: hello@jiki.io
 ses_mail_configuration_set: test-mail-config
 ses_marketing_configuration_set: test-marketing-config
 ses_notifications_configuration_set: test-notifications-config
+ses_region: eu-west-1

@@ -38,3 +38,4 @@ support_email: hello@jiki.io
 ses_mail_configuration_set: jiki-mail-local
 ses_marketing_configuration_set: jiki-marketing-local
 ses_notifications_configuration_set: jiki-notifications-local
+ses_region: eu-west-1

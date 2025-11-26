@@ -38,12 +38,23 @@ module Jiki
 
   def self.r2_client
     require 'aws-sdk-s3'
-    Aws::S3::Client.new(
-      access_key_id: secrets.r2_access_key_id,
-      secret_access_key: secrets.r2_secret_access_key,
-      endpoint: "https://#{config.r2_account_id}.r2.cloudflarestorage.com",
-      region: 'auto',
-      force_path_style: true
-    )
+
+    # Use LocalStack in development/test, Cloudflare R2 in production
+    if env.production?
+      Aws::S3::Client.new(
+        access_key_id: secrets.r2_access_key_id,
+        secret_access_key: secrets.r2_secret_access_key,
+        endpoint: "https://#{config.r2_account_id}.r2.cloudflarestorage.com",
+        region: 'auto',
+        force_path_style: true
+      )
+    else
+      # Use LocalStack S3 for R2 in development
+      Aws::S3::Client.new(
+        JikiConfig::GenerateAwsSettings.().merge(
+          force_path_style: true
+        )
+      )
+    end
   end
 end

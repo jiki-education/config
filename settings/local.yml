@@ -4,10 +4,10 @@ aurora_port: 5432
 aurora_database_name: jiki_development
 
 # Frontend URL for emails and CORS
-frontend_base_url: http://localhost:3061
+frontend_base_url: http://local.jiki.io:3061
 
 # Admin URL for CORS
-admin_base_url: http://localhost:3062
+admin_base_url: http://local.jiki.io:3062
 
 # SPI (Service Provider Interface) base URL for callbacks
 spi_base_url: http://local.jiki.io:3060/spi

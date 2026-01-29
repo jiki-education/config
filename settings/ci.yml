@@ -17,8 +17,11 @@ s3_bucket_video_production: test-bucket
 
 # Cloudflare R2 (test values)
 r2_account_id: "test-account-id"
+r2_endpoint: "http://localhost:4566"
 r2_bucket_assets: "test-assets"
+r2_bucket_uploads: "test-uploads"
 assets_cdn_url: "https://test-assets.example.com"
+uploads_host: ""
 
 # Stripe Configuration (test mode)
 stripe_publishable_key: pk_test_fake_publishable_key

@@ -12,9 +12,6 @@ admin_base_url: http://localhost:3062
 # SPI (Service Provider Interface) base URL for callbacks
 spi_base_url: http://local.jiki.io:3060/spi
 
-# S3 Buckets
-s3_bucket_video_production: test-bucket
-
 # Cloudflare R2 (test values)
 r2_account_id: "test-account-id"
 r2_endpoint: "http://localhost:4566"
@@ -39,3 +36,9 @@ ses_mail_configuration_set: test-mail-config
 ses_marketing_configuration_set: test-marketing-config
 ses_notifications_configuration_set: test-notifications-config
 ses_region: eu-west-1
+
+# LLM Proxy URL for AI translation services
+llm_proxy_url: http://localhost:3064/exec
+
+# Sentry Error Tracking (disabled in test)
+sentry_dsn: ""

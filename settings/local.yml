@@ -15,9 +15,6 @@ spi_base_url: http://local.jiki.io:3060/spi
 # LLM Proxy URL for AI translation services
 llm_proxy_url: http://localhost:3064/exec
 
-# S3 Buckets
-s3_bucket_video_production: jiki-videos-dev
-
 # Cloudflare R2 (uses LocalStack in dev)
 r2_account_id: "0a0e6f92decf825364b860e2286ceebf"
 r2_endpoint: "http://localhost:4566"
@@ -42,3 +39,6 @@ ses_mail_configuration_set: jiki-mail-local
 ses_marketing_configuration_set: jiki-marketing-local
 ses_notifications_configuration_set: jiki-notifications-local
 ses_region: eu-west-1
+
+# Sentry Error Tracking (disabled in development)
+sentry_dsn: ""

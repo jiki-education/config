@@ -20,7 +20,7 @@ r2_account_id: "0a0e6f92decf825364b860e2286ceebf"
 r2_endpoint: "http://localhost:4566"
 r2_bucket_assets: "assets"
 r2_bucket_uploads: "uploads"
-assets_cdn_url: "http://localhost:3065/assets"
+assets_cdn_url: "https://assets.jiki.io"
 uploads_host: "http://localhost:4566/uploads"
 
 # Stripe Configuration

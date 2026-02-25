@@ -17,11 +17,11 @@ llm_proxy_url: http://localhost:3064/exec
 
 # Cloudflare R2 (uses LocalStack in dev)
 r2_account_id: "0a0e6f92decf825364b860e2286ceebf"
-r2_endpoint: "http://localhost:4566"
+r2_endpoint: "http://localhost:3065"
 r2_bucket_assets: "assets"
 r2_bucket_uploads: "uploads"
 assets_cdn_url: "https://assets.jiki.io"
-uploads_host: "http://localhost:4566/uploads"
+uploads_host: "http://localhost:3065/uploads"
 
 # Stripe Configuration
 stripe_publishable_key: pk_test_51SPygTEvAkEDKF4oICBUOrPTFQuMgOwt9gHiP6LKggy7oFRPf56stByJMcM1z9ssTZRIMQSEDdnAXRrDrgqiDg6R00cD0VsQWQ

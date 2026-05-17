@@ -42,3 +42,7 @@ llm_proxy_url: http://localhost:3064/exec
 
 # Sentry Error Tracking (disabled in test)
 sentry_dsn: ""
+
+# PostHog Analytics (no-op in non-production)
+posthog_host: "https://eu.i.posthog.com"
+posthog_api_key: "phc_fake_posthog_api_key"

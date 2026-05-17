@@ -42,3 +42,7 @@ ses_region: eu-west-1
 
 # Sentry Error Tracking (disabled in development)
 sentry_dsn: ""
+
+# PostHog Analytics (no-op in non-production)
+posthog_host: "https://eu.i.posthog.com"
+posthog_api_key: "phc_fake_posthog_api_key"

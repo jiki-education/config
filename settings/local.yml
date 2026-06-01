@@ -15,6 +15,9 @@ spi_base_url: http://local.jiki.io:3060/spi
 # LLM Proxy URL for AI translation services
 llm_proxy_url: http://localhost:3064/exec
 
+# Exercism (OAuth sign-in provider)
+exercism_base_url: http://local.exercism.io:3020
+
 # Cloudflare R2 (uses LocalStack in dev)
 r2_account_id: "0a0e6f92decf825364b860e2286ceebf"
 r2_endpoint: "http://localhost:3065"

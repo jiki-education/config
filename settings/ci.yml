@@ -43,6 +43,9 @@ ses_region: eu-west-1
 # LLM Proxy URL for AI translation services
 llm_proxy_url: http://localhost:3064/exec
 
+# Exercism (OAuth sign-in provider)
+exercism_base_url: http://local.exercism.io:3020
+
 # Sentry Error Tracking (disabled in test)
 sentry_dsn: ""
 

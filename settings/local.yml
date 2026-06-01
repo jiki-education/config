@@ -23,6 +23,10 @@ r2_bucket_uploads: "uploads"
 assets_cdn_url: "https://assets.jiki.io"
 uploads_host: "http://localhost:3065/uploads"
 
+# Cloudflare Turnstile (bot protection)
+# Dev uses Cloudflare's documented "always passes, visible" test site key.
+turnstile_site_key: "1x00000000000000000000AA"
+
 # Stripe Configuration
 stripe_publishable_key: pk_test_51SPygTEvAkEDKF4oICBUOrPTFQuMgOwt9gHiP6LKggy7oFRPf56stByJMcM1z9ssTZRIMQSEDdnAXRrDrgqiDg6R00cD0VsQWQ
 stripe_premium_monthly_price_id: "price_1T2EPNEvAkEDKF4oJwWzt5L9"

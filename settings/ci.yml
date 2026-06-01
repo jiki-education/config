@@ -20,6 +20,9 @@ r2_bucket_uploads: "test-uploads"
 assets_cdn_url: "https://test-assets.example.com"
 uploads_host: ""
 
+# Cloudflare Turnstile (bot protection)
+turnstile_site_key: "1x00000000000000000000AA"
+
 # Stripe Configuration (test mode)
 stripe_publishable_key: pk_test_fake_publishable_key
 stripe_premium_monthly_price_id: price_fake_premium_monthly

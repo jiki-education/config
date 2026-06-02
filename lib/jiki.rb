@@ -46,13 +46,21 @@ module Jiki
         secret_access_key: secrets.r2_secret_access_key,
         endpoint: "https://#{config.r2_account_id}.r2.cloudflarestorage.com",
         region: 'auto',
-        force_path_style: true
+        force_path_style: true,
+        # R2 doesn't support the SDK's default automatic CRC32 checksums
+        # ("You can only specify one non-default checksum at a time"),
+        # so only calculate checksums when strictly required.
+        request_checksum_calculation: 'when_required',
+        response_checksum_validation: 'when_required'
       )
     else
-      # Use LocalStack S3 for R2 in development
+      # Use LocalStack S3 for R2 in development.
+      # Keep checksum behaviour consistent with the production R2 client.
       Aws::S3::Client.new(
         JikiConfig::GenerateAwsSettings.().merge(
-          force_path_style: true
+          force_path_style: true,
+          request_checksum_calculation: 'when_required',
+          response_checksum_validation: 'when_required'
         )
       )
     end

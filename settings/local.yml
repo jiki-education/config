@@ -26,6 +26,10 @@ r2_bucket_uploads: "uploads"
 assets_cdn_url: "https://assets.jiki.io"
 uploads_host: "http://localhost:3065/uploads"
 
+# S3 Active Storage (exercise submission files; uses LocalStack in dev)
+s3_active_storage_bucket: "active-storage"
+s3_active_storage_region: "eu-west-1"
+
 # Cloudflare Turnstile (bot protection)
 # Dev uses Cloudflare's documented "always passes, visible" test site key.
 turnstile_site_key: "1x00000000000000000000AA"

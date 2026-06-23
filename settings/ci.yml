@@ -6,6 +6,9 @@ aurora_database_name: jiki_test
 # Frontend URL for emails and CORS
 frontend_base_url: http://localhost:3060
 
+# API's own public base URL (used for one-click unsubscribe links in emails)
+api_base_url: http://localhost:3060
+
 # Admin URL for CORS
 admin_base_url: http://localhost:3062
 

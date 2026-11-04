@@ -41,7 +41,7 @@ turnstile_site_key: "1x00000000000000000000AA"
 stripe_publishable_key: pk_test_51SPygTEvAkEDKF4oICBUOrPTFQuMgOwt9gHiP6LKggy7oFRPf56stByJMcM1z9ssTZRIMQSEDdnAXRrDrgqiDg6R00cD0VsQWQ
 stripe_premium_monthly_price_id: "price_1T2EPNEvAkEDKF4oJwWzt5L9"
 stripe_premium_annual_price_id: "price_1T2EQAEvAkEDKF4oDXXZgHhv"
-stripe_premium_lifetime_price_id: "price_REPLACE_WITH_TEST_MODE_LIFETIME_PRICE"
+stripe_premium_lifetime_price_id: "price_1UXxh6EvAkEDKF4ovUKKeIrU"
 
 # Email Configuration
 mail_from_email: hello@mail.jiki.io

@@ -12,7 +12,9 @@ jobs:
 
     services:
       aws:
-        image: "localstack/localstack"
+        # LocalStack requires an auth token from 2026.03.0 onwards. 4.14 is the
+        # last release that runs without one.
+        image: "localstack/localstack:4.14"
         ports:
           - 4566
 

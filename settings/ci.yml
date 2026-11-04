@@ -34,6 +34,8 @@ turnstile_site_key: "1x00000000000000000000AA"
 stripe_publishable_key: pk_test_fake_publishable_key
 stripe_premium_monthly_price_id: price_fake_premium_monthly
 stripe_premium_annual_price_id: price_fake_premium_annual
+stripe_premium_lifetime_price_id: price_fake_premium_lifetime
+stripe_premium_lifetime_low_usd_price_id: price_fake_premium_lifetime_low_usd
 
 # Email Configuration
 mail_from_email: hello@mail.jiki.io
